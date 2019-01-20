@@ -7,6 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+      <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.1/css/mdb.min.css" rel="stylesheet">
+
+
   </head>
   <script>
 
@@ -50,6 +59,12 @@
       color: #ffffff;
     }
 
+    .card h5 {
+      margin: 0;
+      font-family: 'Thasadith', sans-serif;
+      color: stylish-color;
+    }
+
   </style>
   <body>
 
@@ -82,7 +97,7 @@
       <div class="container">
         <h1 class="display-4">Harman Brar</h1>
         <p class="lead">I am a <a href="https://www.ubc.ca/">UBC</a> Computer Science student with a passion for programming towards a better future.</p>
-        <button type="button" class="btn btn-secondary" onclick="showResume()">My Resume</button>
+        <button type="button" class="btn stylish-color" onclick="showResume()">My Resume</button>
       </div>
     </div>
 
@@ -102,26 +117,54 @@
 
     <hr>
 
-      <div class="container" text-align="center">
-        <div class="contactForm" id="contactForm">
-          <h1><u><b>Contact Me</b></u></h1>
-            <input type='hidden' name='redirect_to' value='https://harman-brar.github.io/msgrecieved.html' />
-          <br>
-          <form action="https://getsimpleform.com/messages?form_api_token=016abf09a445f80f252fbe7603ca6bec" method="post">
-            <input type="text" name="name" placeholder="name" required>
-            <br><br>
-            <input type="email" name="email" placeholder="Your email address" required>
-            <br><br>
-            <textarea name="message" rows="5" cols="20" placeholder="Write message here." required></textarea>
-            <br>
-            <input id="recieved" value ="Message recieved!" hidden readonly/>
-            <input id="hearBack" value ="You should hear back shortly!" hidden readonly/>
-            <br>
-            <button type="submit" class="btn btn-success" value="Test form" onclick="submitHit()">Submit</button>
-          </form>
+    <div class="container">
+      <div class="card elegant-color" id="contactForm">
+            <h5 class="card-header white-text text-center py-5 stylish-color" id=cardOne>
+                <strong>Contact Me</strong>
+            </h5>
+            <!--Card content-->
+            <div class="card-body px-lg-5 pt-0">
+              <h3 class="white-text" id="status"></h3>
+                <!-- Form -->
+                <form class="text-center" style="color: #757575;" id="contact-form" name="contact-form" action="https://getsimpleform.com/messages?form_api_token=016abf09a445f80f252fbe7603ca6bec" method="post">
+                    <!-- Name -->
+                    <textarea id="status" name="status" type="text" class="white-text" hidden></textarea>
+                    <div class="md-form mt-3">
+                        <input name="name" type="text" id="name" class="form-control white-text" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <!-- E-mail -->
+                    <div class="md-form">
+                        <input name="email" type="email" id="email" class="form-control white-text" required>
+                        <label for="email">E-mail</label>
+                    </div>
+
+                    <!--Message-->
+                    <div class="md-form">
+                        <textarea name="message" type="text" id="message" class="form-control md-textarea white-text" rows="3" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+
+                    <br>
+                    <!-- Send button -->
+                    <button name="submit" type="submit" value="Submit" class="btn btn-outline-light btn-rounded btn-block z-depth-0 my-4 waves-effect">Send</button>
+                    <!-- <input name="submit" type="submit" value="Submit"> -->
+                </form>
+                <!-- Form -->
+            </div>
+          </div>
         </div>
 
         <br><br><br><br>
+
+        <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.1/js/mdb.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
