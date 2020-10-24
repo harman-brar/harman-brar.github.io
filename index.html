@@ -1,184 +1,245 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Harman's Site | Home</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-      <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.1/css/mdb.min.css" rel="stylesheet">
-
-
-  </head>
-  <script type="text/javascript">
-
-    function scrollToContact() {
-      document.getElementById("contactForm").scrollIntoView({ behavior: 'smooth', block: 'center'});
-    }
-
-    function showResume() {
-      window.open('./resume/BrarHarman.pdf', '_blank');
-    }
-
-  </script>
-
-  <style>
-
-    body {
-      background-image: url('./assets/abstract.png');
-    }
-    .jumbotron {
-      background-image: url('./assets/jumboBackground.jpg');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-    .jumbotron a {
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .jumbotron h1 {
-      color: white;
-    }
-    .jumbotron p {
-      color: white;
-    }
-    .writeUp img {
-      border-radius: 100%;
-    }
-    .passage {
-      background-image: url('./assets/paperBackground.jpg');
-    }
-    .passage p {
-      font-size: 18px;
-    }
-    .bg-4 {
-      background-color: #2f2f2f;
-      color: #ffffff;
-    }
-
-    .card h5 {
-      margin: 0;
-      font-family: 'Thasadith', sans-serif;
-      color: stylish-color;
-    }
-
-  </style>
-  <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">Harman Brar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="projects.html">Projects</a>
-          <a class="nav-item nav-link" href="javascript:scrollToContact()">Contact</a>
-        </div>
-      </div>
-    </nav>
-
-    <footer class="container-fluid bg-4 text-center fixed-bottom">
-	      <a href="https://github.com/harman-brar" target="_blank">
-	         <img class="img-responsive img-circle zoom" style="display:inline" src="./assets/github.png" alt="githublogo" width="62" height="62">
-	      </a>&nbsp;
-	      <a href="https://stackoverflow.com/users/6074388/hb22" target="_blank">
-	         <img class="img-responsive img-circle zoom" style="display:inline" src="./assets/stackO.png" alt="stackoverflow" width="62" height="62">
-	      </a>&nbsp;
-        <a href="https://play.google.com/store/apps/developer?id=EchEssBee+Interactive&hl=en" target="_blank">
-	         <img class="img-responsive img-circle zoom" style="display:inline" src="./assets/gplogo.png" alt="googleplay" width="62" height="62">
-	      </a>
-	   </footer>
-
-    <div class="jumbotron jumbotron-fluid">
+<html lang="en" class="no-js">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Harman's Site</title>
+      <meta name="description" content="Harman Brar - Digital Portfolio" />
+      <meta name="keywords" content="digital, portfolio, resume" />
+      <meta name="author" content="Harman Brar" />
+      <link rel="shortcut icon" href="img/favicon.jpg">
+      <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+      <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css" />
+      <link rel="stylesheet" type="text/css" href="css/modern-blog.css" />
+      <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+      <script> if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) { var root = document.getElementsByTagName('html')[0]; root.setAttribute('class', 'ff'); } </script>
+      <style> .links a { color: #3b393d !important; } </style>
+   </head>
+   <body class="body">
       <div class="container">
-        <h1 class="display-4">Harman Brar</h1>
-        <p class="lead">I am a <a href="https://www.ubc.ca/">UBC</a> Computer Science student with a passion for programming towards a better future.</p>
-        <button type="button" class="btn stylish-color" onclick="showResume()">My Resume</button>
-      </div>
-    </div>
-
-    <div class="container" text-align="center">
-      <div class="writeUp">
-        <h1><u><b>A Little Bit About Me</b></u></h1>
-        <br>
-        <img src="./assets/harm(1).jpg" alt="Avatar">
-        <br><br>
-        <div class="passage">
-          <br>
-          <p>I enjoy solving complex problems with elegant solutions. Tinkering with new technologies is one of my favourite pass times. I played hockey for over 10 years, and I'm a big fan of (motor)sports. Currently working towards my motorcycle license! Hey, while you're here, make sure to check out my projects!</p>
-          <br>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="container" text-align="center">
-      <h3>Contact form is currently out of order. Please email me directly <a href="mailto:hbrar95@gmail.com">here.</a></h3>
-    </div>
-
-    <div class="container">
-      <div class="card elegant-color" id="contactForm">
-            <h5 class="card-header white-text text-center py-5 stylish-color" id=cardOne>
-                <strong>Contact Me</strong>
-            </h5>
-            <!--Card content-->
-            <div class="card-body px-lg-5 pt-0">
-              <h3 class="white-text" id="status"></h3>
-                <!-- Form -->
-                <form class="text-center" style="color: #757575;" id="contact-form" name="contact-form" action="https://getsimpleform.com/messages?form_api_token=016abf09a445f80f252fbe7603ca6bec" method="post">
-                  <input type='hidden' name='redirect_to' value='https://harman-brar.github.io/msg_received.html' />
-                    <!-- Name -->
-                    <textarea id="status" name="status" type="text" class="white-text" hidden></textarea>
-                    <div class="md-form mt-3">
-                        <input name="name" type="text" id="name" class="form-control white-text" required>
-                        <label for="name">Name</label>
-                    </div>
-                    <!-- E-mail -->
-                    <div class="md-form">
-                        <input name="email" type="email" id="email" class="form-control white-text" required>
-                        <label for="email">E-mail</label>
-                    </div>
-
-                    <!--Message-->
-                    <div class="md-form">
-                        <textarea name="message" type="text" id="message" class="form-control md-textarea white-text" rows="3" required></textarea>
-                        <label for="message">Message</label>
-                    </div>
-
-                    <br>
-                    <!-- Send button -->
-                    <button name="submit" type="submit" value="Submit" class="btn btn-outline-light btn-rounded btn-block z-depth-0 my-4 waves-effect">Send</button>
-                    <!-- <input name="submit" type="submit" value="Submit"> -->
-                </form>
-                <!-- Form -->
+         <header class="header">
+           <img src="img/my_character.png" height="200" width="200"/>
+            <h1>Harman Brar<span>The best thing about a Boolean <br> is that even if you are wrong, <br>you are only off by a bit.</span></h1>
+            <nav class="links">
+              <a href="https://www.instagram.com/abracadabrar4/" target="_blank">
+                <i class="fa fa-instagram fa-3x"></i>
+              </a> <a href="https://www.facebook.com/harman.brar.14418/" target="_blank">
+                <i class="fa fa-facebook-square fa-3x"></i>
+              </a>
+              <a href="https://github.com/harman-brar" target="_blank">
+                <i class="fa fa-github-square fa-3x"></i>
+              </a>
+              <a href="https://play.google.com/store/apps/developer?id=EchEssBee+Interactive" target="_blank">
+                <i class="fa fa-android fa-3x"></i>
+              </a>
+              <a href="https://stackoverflow.com/users/6074388/hb22" target="_blank">
+                <i class="fa fa-stack-overflow fa-3x"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/harman-brar-756897184" target="_blank">
+                <i class="fa fa-linkedin-square fa-3x"></i>
+              </a>
+              <a href="https://harman-brar.github.io/resume/BrarHarman.pdf" target="_blank">
+                <i class="fa fa-file-text fa-3x"></i>
+              </a>
+            </nav>
+         </header>
+         <div class="content">
+            <!-- trianglify pattern container -->
+            <div class="pattern pattern--hidden"></div>
+            <!-- cards -->
+            <div class="wrapper">
+               <div class="card" data-id="/2020/05/11/6_netbooklet">
+                  <div class="card__container card__container--closed">
+                     <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                           <clipPath id="/2020/05/11/6_amazon-clip-path">
+                              <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                           </clipPath>
+                        </defs>
+                        <image clip-path="url(#/2020/05/11/6_amazon-clip-path)" width="1920" height="1200" xlink:href="img/netbookletTransparent.png"></image>
+                     </svg>
+                     <div class="card__content">
+                        <i class="card__btn-close fa fa-times"></i>
+                        <div class="card__caption">
+                           <h2 class="card__title">Founder</h2>
+                           <p class="card__subtitle">NETBOOKLET Technologies</p>
+                        </div>
+                        <div class="card__copy">
+                           <p>
+                             • Ideated platform based on market gap <br>
+                             • Developed frontend in ​Vue​ + ​HTML + JavaScript <br>
+                             • Designed relational database schema and implemented it in ​ PSQL PSQL <br>
+                             • Wrote services in ​ Node.js/Express<br>
+                             • Leading team of 3 in implementing new features and business strategies<br>
+                             • Researching various marketing strategies<br>
+                             • Building customer relations<br>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card" data-id="/2020/01/20/5_pagerduty">
+                  <div class="card__container card__container--closed">
+                     <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                           <clipPath id="/2020/01/20/5_pagerduty-clip-path">
+                              <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                           </clipPath>
+                        </defs>
+                        <image clip-path="url(#/2020/01/20/5_pagerduty-clip-path)" width="1920" height="1200" xlink:href="img/abb.webp"></image>
+                     </svg>
+                     <div class="card__content">
+                        <i class="card__btn-close fa fa-times"></i>
+                        <div class="card__caption">
+                           <h2 class="card__title">Software R&D Intern</h2>
+                           <p class="card__subtitle">ABB Ltd. Winter 2019</p>
+                        </div>
+                        <div class="card__copy">
+                           <p>
+                             • Led a team of 4 UI automation engineers<br>
+                             • Improved UI & Integration test run times by up to ​31%<br>
+                             • Developed ​ Katalon​ - ​TM4J​ integration to improve engineer productivity<br>
+                             • Contributed to internal automation framework written in ​Java, Groovy and ​Kotlin<br>
+                             • Interacted with ​DevOps ​& ​CI/CD​ tools daily<br>
+                             • Engaged in ​Agile​ development practices<br>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card" data-id="/2019/06/16/4_uoft">
+                  <div class="card__container card__container--closed">
+                     <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                           <clipPath id="/2019/06/16/4_uoft-clip-path">
+                              <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                           </clipPath>
+                        </defs>
+                        <image clip-path="url(#/2019/06/16/4_uoft-clip-path)" width="1920" height="1200" xlink:href="img/ubc.jpg"></image>
+                     </svg>
+                     <div class="card__content">
+                        <i class="card__btn-close fa fa-times"></i>
+                        <div class="card__caption">
+                           <h2 class="card__title">Computer Science</h2>
+                           <p class="card__subtitle">University of British Columbia</p>
+                        </div>
+                        <div class="card__copy">
+                           <p><strong><em>UBC Vancouver</em></strong> Bachelor of Science (B.Sc.) - Computer Science 2017 – 2022</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card" data-id="/2019/06/15/3_rbc">
+                  <div class="card__container card__container--closed">
+                     <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                           <clipPath id="/2019/06/15/3_rbc-clip-path">
+                              <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                           </clipPath>
+                        </defs>
+                        <image clip-path="url(#/2019/06/15/3_rbc-clip-path)" width="1920" height="1200" xlink:href="img/purposely.png"></image>
+                     </svg>
+                     <div class="card__content">
+                        <i class="card__btn-close fa fa-times"></i>
+                        <div class="card__caption">
+                           <h2 class="card__title">Software Development Intern</h2>
+                           <p class="card__subtitle">Purposely Summer 2019</p>
+                        </div>
+                        <div class="card__copy">
+                           <p>
+                             • Enhanced existing ​React.js​ / ​Django​ web application to a ​Progressive Web App<br>
+                             • Focused on clean, modular design based on React best practices<br>
+                             • Designed Django Models for efficiency, completeness, and usability<br>
+                             • Engaged in ​ Agile ​ development practices and company meet & greets<br>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card" data-id="/2019/06/14/4_sgc">
+                  <div class="card__container card__container--closed">
+                     <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                           <clipPath id="/2019/06/14/4_sgc-clip-path">
+                              <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                           </clipPath>
+                        </defs>
+                        <image clip-path="url(#/2019/06/14/4_sgc-clip-path)" width="1920" height="1200" xlink:href="img/sailbot.jpg"></image>
+                     </svg>
+                     <div class="card__content">
+                        <i class="card__btn-close fa fa-times"></i>
+                        <div class="card__caption">
+                           <h2 class="card__title">Software Engineer</h2>
+                           <p class="card__subtitle">UBC Sailbot 2018-2020</p>
+                        </div>
+                        <div class="card__copy">
+                           <p>
+                             • Developed ​MongoDB ​schema for storing autonomous sailboat sensor data<br>
+                             • Built ​ Node.js/Express ​backend to enable two-way communication between web client and sailbot<br>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card" data-id="/2019/06/13/2_shopify">
+                  <div class="card__container card__container--closed">
+                     <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                           <clipPath id="/2019/06/13/2_shopify-clip-path">
+                              <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                           </clipPath>
+                        </defs>
+                        <image clip-path="url(#/2019/06/13/2_shopify-clip-path)" width="1920" height="1200" xlink:href="img/ubchem.jpg"></image>
+                     </svg>
+                     <div class="card__content">
+                        <i class="card__btn-close fa fa-times"></i>
+                        <div class="card__caption">
+                           <h2 class="card__title">Research Assistant</h2>
+                           <p class="card__subtitle">Momose Group (UBC Chemistry) Summer 2018</p>
+                        </div>
+                        <div class="card__copy">
+                           <p>
+                             • Automated the visualization of data from various programs using Igor scripts, saving hundreds of hours​ of manual data handling<br>
+                             • Studied and began work on adapting an evolutionary algorithm in ​C++ to improve local Zeeman Decelerator configuration<br>
+                             • Designed cutting edge ion optics configuration to optimize detection of ammonia molecules in a microwave trap cavity<br>
+                             • Delivered biweekly presentation on progress and task forecast<br>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card" data-id="/2019/06/12/1_loblaws">
+                  <div class="card__container card__container--closed">
+                     <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                           <clipPath id="/2019/06/12/1_loblaws-clip-path">
+                              <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                           </clipPath>
+                        </defs>
+                        <image clip-path="url(#/2019/06/12/1_loblaws-clip-path)" width="1920" height="1200" xlink:href="img/gsdev.jpeg"></image>
+                     </svg>
+                     <div class="card__content">
+                        <i class="card__btn-close fa fa-times"></i>
+                        <div class="card__caption">
+                           <h2 class="card__title">Software Development Intern</h2>
+                           <p class="card__subtitle">GS Software Development</p>
+                        </div>
+                        <div class="card__copy">
+                           <p>
+                             • Developed ​React Native ​parent-school communication tool application<br>
+                             • Built components for displaying grades and attendance<br>
+                             • Participated in weekly meetings to discuss design, functionality, and progress<br>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- /cards -->
             </div>
-          </div>
-        </div>
-
-        <br><br><br><br>
-
-        <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.1/js/mdb.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+         </div>
+         <!-- /container -->
+      </div>
+      <!-- JS --> <script src="js/vendors/trianglify.min.js"></script> <script src="js/vendors/TweenMax.min.js"></script> <script src="js/vendors/ScrollToPlugin.min.js"></script> <script src="js/vendors/cash.min.js"></script> <script src="js/card-modern-blog.js"></script> <script src="js/modern-blog.js"></script>
+   </body>
 </html>
